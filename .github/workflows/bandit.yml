@@ -37,7 +37,7 @@ jobs:
       - name: Upload Bandit SARIF report to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: bandit-report.sarif
+          sarif_file: reports/bandit-report.sarif
 
       - name: Upload Bandit JSON report as artifact
         uses: actions/upload-artifact@v4
